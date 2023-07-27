@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Housing Prices Prediction</title>
+</head>
+<body>
+<h1> Predict Housing Prices in California using PySpark</h1>
+<form action="{{url_for('predict')}}" method="post">
+    <input type="text" name="Longitude" placeholder="Longitude" required="required">
+    <br>
+    <br>
+    <input type="text" name="Latitude" placeholder="Latitude" required="required">
+    <br>
+    <br>
+    <input type="text" name="Housing Median Age" placeholder="Housing Median Age" required="required">
+    <br>
+    <br>
+    <input type="text" name="Total Rooms" placeholder="Total Rooms" required="required">
+    <br>
+    <br>
+    <input type="text" name="Households" placeholder="Households" required="required">
+    <br>
+    <br>
+    <input type="text" name="Median Income" placeholder="Median Income" required="required">
+    <br>
+    <br>
+    <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+</form>
+{{ prediction_text}}
+</body>
+</html>
